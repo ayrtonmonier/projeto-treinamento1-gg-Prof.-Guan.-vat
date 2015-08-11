@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web); /* fonte do google */
+
+/*  fonte local - referenciado */
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/*estilo do corpo da pagina*/
+body{
+
+    font-family: Arial, sans-serif;
+    background-color:#2196F3; /* fundo da pagina cinza claro */
+    color:rgba(0,0,0,1); /* fontes da pagina preta com leve transparencia */
+}
+
+/* estilo da div interface*/
+div#interface{
+
+    width: 900px; /* largura da div "interface"*/
+    margin: -20px auto 0px auto; /* margens do div "interface" */
+    background-color: #ffffff; /* cor de fundo da div "interface" (branco) */
+    box-shadow: 0px 0px 10px rgba(0,0,0, .5); /* efeito de sombra */
+    padding: 10px;
+
+
+}
+
+/*estilo dos parágrafos*/
+p{
+    text-align:justify; /* texto dos parágrafos alinhados */
+    text-indent:50px; /* indentação de 50 pixels a cada paragrafo */
+}
+
+a{
+
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+
+    text-decoration: underline;
+}
+
+
+/* estilo do elemento cabeçalho */
+header#cabecalho{
+
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 95px;
+
+}
+
+/* estilo do h1 do cabeçalho */
+header#cabecalho h1{
+
+    font-family: FonteLogo, sans-serif; /* definição de fonte */
+    font-size: 30px; /* tamanhho da fonte */
+    color: #606060; /* cor cinza */
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* sobreamento do texto */
+    padding: 0px; /* espaçamento de dentro do elemento */
+    margin-bottom: 0px; /* espaçamento de margem de baixo do elemento */
+
+}
+
+/* estilo do h2 do cabeçalho */
+header#cabecalho h2{
+
+    font-family: 'Titillium Web', sans-serif; /* fonte do google online*/
+    /*font-family: Arial, sans-serif; /* tipo de fonte */
+    color: #888888; /* cor da fonte */
+    font-size: 18pt; /* tamanho da fonte */
+    padding: 0px; /* espaçamento de dentro do elemento */
+    margin-top: 0px; /* espaçamento de margem do topo */
+
+}
+
+/* estilo do figure da classe foto-legenda */
+figure.foto-legenda{
+
+    position:relative; /*posição relativa*/
+    border:8px solid white; /*aplicando uma borda*/
+    box-shadow:1px 1px 4px black; /*aplicando uma sombra*/
+
+}
+
+/* estilo da img do figure da classe foto-legenda */
+figure.foto-legenda img{
+
+    width:100%;  /*largura ocupando 100% do limite */
+    height:100%; /*altura ocupando 100% do limite */
+
+}
+
+/* estilo da legenda do figure da classe foto-legenda */
+figure.foto-legenda figcaption{
+
+    opacity:0;
+    position:absolute; /*posição absoluta em relação ao objeto pai*/
+    top:0px; /*posição absoluta zero relativo ao figure pai*/
+    background-color:rgba(0,0,0,.4);
+    color:white; /*cor da legenda*/
+    width:100%; /*largura ocupando espaço geral */
+    height:100%; /*altura ocupando espaço geral*/
+    padding:10px; /*espacamento da legenda para dentro*/
+    box-sizing:border-box; /*cria um box dentro */
+    transition:opacity 1s; /*transição de opacidade de 1 segundo*/
+
+}
+
+/* estilo de efeito para legenda do figure da classe foto-legenda */
+figure.foto-legenda:hover figcaption{
+
+    /* ao posicionar o mouse sobre a imagem... */
+    /*(hover)*/
+    opacity:1; /* opacidade 1 (visível) */
+
+}
+
+/* Estilo do Menu */
+nav#menu{
+
+    display: block; /* menu de navegação em bloco flutuante */
+
+}
+
+/* Estilo da lista */
+nav#menu ul{
+
+    list-style: none; /* tira a marcação */
+    text-transform: uppercase; /* texto em maiusculo */
+    position:absolute; /* posição absoluta em relação à pagina */
+    top:-20px; /* deixando a lista no topo */
+    margin: 20px auto 0px 275px;
+}
+
+/* Estilo dos itens da lista */
+nav#menu li{
+
+    display: inline-block; /* itens em linha horizontal */
+    background-color: darkgrey; /* cor de fundo dos itens*/
+    padding: 10px; /* espaçamento do fundo em reação ao texto do item */
+    margin: 0px 2px; /* espaçamento entre os itens */
+    transition: background-color 1s; /* transição na cor de fundo do item - 1 segundo*/
+    font-family: 'FonteLogo', sans-serif;
+    color: #dddddd;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+ }
+ 
+ /* estilo do icone que está na classe cabecalho do header */
+header#cabecalho img#icone{
+
+    position:relative; /* posicao absoluta relativo à pagina */
+    left: 750px; /* espacamento à esquerda */
+    top: -25px; /* espaçamento no topo */
+
+}
+
+/* estilo ao passar o mouse sobre o menu */
+nav#menu li:hover{
+
+    background-color: #606060; /* ao passar o mouse sobre o item altera a cor*/
+
+}
+
+/* estilo do link do menu de navegação */
+nav#menu a{
+
+    color: #000000; /* cor do link */
+    text-decoration: none; /* link sem tracejado */
+}
+
+/* estilo ao passar o mouse pelo menu de navegação */
+nav#menu a:hover{
+
+    color: #ffffff; /* cor do texto do menu */
+
+}
+
+/* estilo do h1 dentro da nav */
+nav#menu h1{
+
+    display:none; /* esconde o h1 */
+
+}
+
+/* estilo da sessao corpo */
+section#corpo{
+
+    display: block; /* transforma em bloco (para flutuar) */
+    width:500px; /* largura de 500 pixel */
+    float: left; /* flutuar à esquerda */
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+/* estilo do aside lateral */
+aside#lateral{
+
+    display:block; /* transforma em bloco (para flutuar) */
+    width: 350px; /* largura de 350px */
+    float: right; /* flutuar à direita */
+}
+
+/* estilo do rodapé */
+footer#rodape{
+
+    clear: both; /* apaga a formatação em que o rodapé foi incluido */
+    border-top: 1px solid #606060; /* borda de cima de 1 pixel solida na cor cinza */
+
+}
+
+/* estilo do paragrafo no rodapé */
+footer#rodape p{
+
+    text-align: center;/* texto do paragrafo alinhado ao centro */
+}
+
+/* estilo da tabela  */
+table#tabelaspec{
+
+    border: 1px solid #606060; /* borda de 1 pixel solida na cor cinza */
+    border-spacing: 0px; /* espaçamento de borda de 0 pixels */
+    margin-left: auto;/* margin esquerda definida automaticamente */
+    margin-rigth: auto;/* margem direita definida automaticamente */
+
+
+}
+
+/* estilo da coluna da tabela*/
+table#tabelaspec td{
+
+    border: 1px solid #606060; /* borda de 1 pixel solida e na cor cinza*/
+    padding: 10px; /* espaçamento de dentro da coluna de 10 pixels */
+    text-align: center; /* alinhamento centralizado */
+}
+
+/* estilo das colunas da esquerda*/
+table#tabelaspec td.ce{
+
+    color: #ffffff; /* cor branca no texto */
+    background-color: #606060; /* cor cinza no fundo */
+    vertical-align: top; /* alinhamento vertical no topo */
+    font-weight: bolder; /* negrito na fonte*/
+
+}
+
+/* estilo das colunas da direita */
+table#tabelaspec td.cd{
+
+
+    background-color: #cecece; /* cor cinza claro no fundo */
+
+
+}
+
+/* estilo do titulo da tabela*/
+table#tabelaspec caption{
+
+    color: #606060; /* cor do texto cinza escuro*/
+    font-size: 13pt; /* tamanho da fonte 13*/
+    font-weight: bolder; /* fonte em negrito */
+
+}
+
+/* estilo do texto (data) que consideramos como span na tabela */
+table#tabelaspec span{
+
+    display: block; /* transforma em bloco */
+    float: right; /* flutua à direita */
+    color: black; /* cor preta na fonte*/
+    font-size: 8pt; /* tamanho da fonte de 8*/
+    margin-top: 8px;/* aumenta a margem de cima em 8 pixels*/
+
+}
+
+/* estilo dos h2 do artigo (classe noticia-principal) */
+article#noticia-principal h2{
+
+    font-size: 12pt; /* tamanho da fonte */
+    color: #606060; /* cor da fonte cinza */
+    background-color: #dddddd; /* cor de fundo cinza claro */
+    padding: 5px 0px 5px 10px; /* espaçamento de dentro */
+    margin: 10px 0px 10px 0px; /* margem */
+
+}
+
+/* estilo do h1 do cabeçalho do artigo (classe noticia-principal) */
+header#cabecalho-artigo h1{
+
+    /*font-family: 'Titillium Web', sans-serif; /* fonte do google online*/
+    font-family: 'FonteLogo', sans-serif; /* tipo de fonte do google */
+    font-size: 20pt;/* tamanho da fonte de tamanho 20  */
+    color: #606060;/* cor do texto */
+    margin-bottom: 0px;/* margem de baixo zero*/
+    margin-top: 0px;/* margem de cima zero */
+
+}
+
+/* estilo do h2 do cabeçalho do artigo (classe noticia-principal) */
+header#cabecalho-artigo h2{
+
+    font-size:13pt;/* tamanho da fonte */
+    color: #cecece;/* cor do texto */
+    background-color: #ffffff;/* cor de fundo cinza  */
+    margin: 0px;/* margem zero */
+
+}
+
+/* estilo do h3 do cabeçalho do artigo (classe noticia-principal) */
+header#cabecalho-artigo h3{
+
+    color: #606060; /* cor da fonte cinza */
+
+}
+
+/* estilo da classe texto à direita */
+.texto-direita{
+
+    text-align: right;/* alinhamento à direita */
+    font-size: 10pt;/* tamanho da fonte de 11 pontos */
+    color:silver;
+
+}
+
+/* estilo aside lateral */
+aside#lateral {
+
+    display: block; /* transforma em bloco */
+    width: 350px; /* largura de 300 pixels */
+    float: right;/* flutuando a direita */
+    background-color: #dddddd;/*cor de fundo*/
+    padding: 10px;/*espaçamento do lado de dentro*/
+    margin-top: 10px;/*margem de cima*/
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5); /* sombreamento  */
+
+}
+
+/* estilo do h1 do aside lateral */
+aside#lateral h1{
+
+    /*font-family: 'Titillium Web', sans-serif; /* fonte do google online*/
+    font-family: "FonteLogo", sans-serif;/* fonte do google */
+    font-size:20pt;/* tmanho da fonte */
+    color:#606060;/* cor da fonte */
+
+}
+
+/* estilo do h2 do aside lateral */
+aside#lateral h2 {
+
+    background-color:#606060;/* cor de fundo*/
+    font-size:16pt;/* tamanho da fonte de 15 pontos */
+    color:#ffffff;/* cor da fonte */
+    padding: 10px;/* espaçamento interno */
+}
+
+
+video#filme01 {
+	
+	width: 350px; 
+	
+}

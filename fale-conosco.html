@@ -1,0 +1,287 @@
+<!DOCTYPE html>  <!-- indica qual versão de código a marcação foi escrita,no caso, HTML5 -->
+
+<!--INÍCIO DO DOCUMENTO HTML-->
+<html lang="pt-br"> 
+
+
+<!--INÍCIO do cabeçalho-->
+<head> 
+
+	<!--codificação utilizada na página-->
+    <meta charset="UTF-8"/> 
+    
+    <!--TITULO da janela/guia do documento-->
+    <title>Tudo Sobre Google Glass</title> 
+    
+    <!--REFERÊNCIA da folha de estilo-->
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+    
+    
+    
+</head>
+<!--FIM do cabeçalho-->
+
+
+<!--INÍCIO DO CORPO da página-->
+<body>
+
+	<!--INÍCIO DA DIV PRINCIPAL - "interface"-->
+	<div id="interface">
+	
+		<!--INÍCIO do cabeçalho da página - "cabecalho" (div/header)-->	
+	    <header id="cabecalho">
+	
+			
+			<!--grupo de títulos do cabeçalho (div/header/hgroup)-->
+	        <hgroup>
+	            <h1>Google Glass</h1>
+	            <h2>A revolução do Google está chegando</h2>
+	        </hgroup>
+	
+			<!--IMAGEM PRINCIPAL DO CABEÇALHO (div/header/img)-->
+	        <img id="icone" src="_imagens/contato.png"/>
+	
+			<!--IMAGEM PRINCIPAL DO CABEÇALHO (div/header/img)-->
+	        <nav id="menu">
+	
+				<!--TÍTULO DO MENU (semântico) (div/header/h1)-->
+	            <h1>Menu Principal</h1>
+	
+				<!--INICIO da lista não ordenada (div/header/nav/ul)-->
+	            <ul type="square">
+	            
+	            	<!--ITENS da lista não ordenada (div/header/nav/ul/li)-->
+	                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+	                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+	                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+	                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+	                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Faleconosco</a></li>
+	            </ul>
+	            <!--FIM da lista não ordenada-->
+	            
+	        </nav>
+	        <!--FIM DO MENU DE NAVEGAÇÃO-->
+	
+	    </header>
+	    <!--FIM do cabeçalho da página - "cabecalho"-->
+	
+		<!--INÍCIO da sessão do corpo da página - "corpo" (div/section)-->
+	    <section id="corpo-full"> 
+	    
+	    
+	    	<!--INÍCIO do artigo "noticia-principal" (div/section/article)-->
+	    	<article id="noticia-principal">
+	
+	
+				<!--INÍCIO do cabeçalho do artigo= "noticia-principal" dentro da sessao="corpo" - "cabecalho-artigo" (div/section/article/header)-->
+		        <header id="cabecalho-artigo">																																																				
+		
+					<!--grupo de títulos do cabeçalho do artigo da sessão (div/section/article/header/hgroup)-->
+		            <hgroup>
+		                <h3>Fale Conosco > Contato</h3>
+		                <h1>Formulário de Contato</h1>
+		                <h2>por Gustavo Guanabara & Ayrton Monier</h2>
+		                <h3 class="texto-direita">Atualizado em 02 de Julho de 2015</h3>
+		            </hgroup>
+		            
+		
+		        </header>
+		        <!--FIM do cabeçalho do artigo= "noticia-principal" dentro da sessao="corpo" - "cabecalho-artigo"-->
+		        
+	
+	
+		        <!--INÍCIO DO FORMULÁRIO (div/section/article/form)-->
+		        <form method="post" id="fContato" action="mailto:ayrtonmonier@gmail.com" oninput="calc_total()">
+		        	
+		        	
+		        	<!--GRUPO DE CAMPOS (USUÁRIO) (div/section/article/form/fieldset)-->
+		        	<fieldset id="usuario">
+		        	
+		        		<!--DESCRIÇÃO DO GRUPO fieldset (USUÁRIO) (div/section/article/form/fieldset/legend)-->
+		        		<legend>Identificação do Usuário</legend>
+			        		
+			        		
+			        		<!--NOME DO USUÁRIO -TEXT- (USUÁRIO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cNome">Nome:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label> 
+			        			<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/> 
+			        		</p>
+			        		
+			        		
+			        		<!--SENHA -PASSWORD- (USUÁRIO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cSenha">Senha:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+			        			<input type="password" name="tSenha" id="cSenha" size="20" maxlength="30" placeholder="Senha"/>
+			        		</p>
+			        		
+			        		
+			        		<!--EMAIL -EMAIL- (USUÁRIO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cEmail">E-mail:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+			        			<input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="E-mail"/>
+			        		</p>
+			        		
+			        		
+			        		<!--GRUPO DE CAMPOS (USUÁRIO/sexo) (div/section/article/form/fieldset/fieldset/legend/input)-->
+				       		<fieldset id=sexo>
+				       			<legend>Sexo:</legend>
+				       			
+				       				<!--SEXO MASC. -RADIO- (USUÁRIO) (div/section/article/form/fieldset/legend/input)-->
+				       				<p><input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label></p>
+				       				
+				       				<!--SEXO FEM. -RADIO- (USUÁRIO) (div/section/article/form/fieldset/legend/input)-->
+				       				<p><input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></p>
+				       		</fieldset>
+		       		
+		       				
+		       				<!--DATA DE NASCIMENTO -DATE- (USUÁRIO) (div/section/article/form/fieldset/label/input)-->
+		        			<p>
+		        				<label for="cDataNasc">Data de Nascimento:&nbsp &nbsp</label>
+		        				<input type="date" name="tDataNasc" id="cDataNasc"/>
+		        			</p> 
+		        			
+		        	</fieldset>
+					<!--FIM GRUPO DE CAMPOS (USUÁRIO) (div/section/article/form/fieldset)-->
+		
+		
+		
+					<!--GRUPO DE CAMPOS (ENDEREÇO) (div/section/article/form/fieldset/legend)-->
+		        	<fieldset id="endereco">
+		        	
+		        		<!--DESCRIÇÃO DO GRUPO fieldset (ENDEREÇO) (div/section/article/form/fieldset/legend)-->
+		        		<legend>Endereço do Usuário</legend>
+		        		
+		        		
+		        			<!--LOGRADOURO -TEXT- (ENDEREÇO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cLog">Logradouro:</label>
+			        			<input type="text" name="tLog" id="cLog" size="20" maxlength="40" placeholder="Rua, Av., Trav., ..."/>
+			        		</p>
+			        		
+			        		
+			        		<!--NUMERO -NUMBER- (ENDEREÇO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cNum">Número:&nbsp &nbsp &nbsp &nbsp</label>
+			        			<input type="number" name="tNum" id="cNum" min="0" max="999999"/>
+			        		</p>
+		 	        		
+		 	        		
+		 	        		<!--OPÇÕES DE ESTADO -select- (ENDEREÇO) (div/section/article/form/fieldset/label/select/optiongroup/option)-->
+		 	        		<p>
+		 	        			<label for="cEst">Estado:&nbsp &nbsp &nbsp &nbsp &nbsp </label>
+		 	        			<select name="tEst" id="cEst">
+		 	        				<optgroup label="Região Nordeste">
+		 	        					<option value="MA">Maranhão</option>
+		 	        					<option value="CE">Ceará</option>
+		 	        				</optgroup>
+		 	        				<optgroup label="Região Sudeste">
+		 	        					<option value="RJ">Rio de Janeiro</option>
+		 	        					<option value="SP">São Paulo</option>
+		 	        				</optgroup>
+		 	        			</select>
+		 	        		</p>
+			        		
+			        		
+			        		<!--OPÇÕES DE CIDADE -TEXT- (ENDEREÇO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cCid">Cidade:&nbsp &nbsp &nbsp &nbsp &nbsp </label>
+			        			<input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua cidade" list="cidades"/>
+			        		</p>
+		        			<datalist id="cidades">
+		        				<option value="São Luís"></option>
+		        				<option value="Paço do Lumiar"></option>
+		        				<option value="Maiobão"></option>
+		        			</datalist>
+		        	</fieldset>
+		        	
+		
+					<!--GRUPO DE CAMPOS (MENSAGEM DO USUÁRIO) (div/section/article/form/fieldset)-->
+		        	<fieldset id="mensagem">
+		        	
+		        		<!--DESCRIÇÃO DO GRUPO fieldset (MENSAGEM DO USUÁRIO) (div/section/article/form/fieldset/legend)-->
+		        		<legend>Mensagem do Usuário</legend>
+		        		
+		        		
+		        			<!--GRAU DE URGENCIA -RANGE-  (MENSAGEM DO USUÁRIO) (div/section/article/form/fieldset/label/input)-->
+		        			<p>
+		        				<label for="cUrg">Grau de Urgência:</label>       				
+		        				min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">max
+		        			</p>
+			        		
+			        		
+			        		<!--MENSAGEM -textarea- (MENSAGEM DO USUÁRIO) (div/section/article/form/fieldset/label)-->
+			        		<p>
+			        			<label for="cMsg">Mensagem:</label>
+			        			<textarea name="tMsg" id="cMsg" cols="40" rows="5" placeholder="Digite sua mensagem"></textarea>
+			        		</p>
+			        		
+		        	</fieldset>
+		
+		
+					<!--GRUPO DE CAMPOS (PEDIDO) (div/section/article/form/fieldset)-->
+		        	<fieldset id="pedido">
+		        	
+		        		<!--DESCRIÇÃO DO GRUPO fieldset (MENSAGEM DO USUÁRIO) (div/section/article/form/fieldset/legend)-->
+		        		<legend>Quero um Google Glass</legend>
+		        		
+		        		
+		        			<!--PEDIR -CHECKBOX-(PEDIDO) (div/section/article/form/fieldset/input/label)-->
+			        		<p>
+				        		<input type="checkbox" name="tPed" id="cPed" checked/> 
+			        			<label for="cPed"> 
+			        				Gostaria de adquirir um Google Glass quando disponível (R$ 1500,00)
+			        			</label>
+			        		</p>
+			        		
+			        		
+			        		<!--COR -COLOR- (PEDIDO) (div/section/article/form/fieldset/label/input)-->
+			        		<p>
+			        			<label for="cCor">Cor:&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+			        			<input type="color" name="tCor" id="cCor" value="blue"/>
+			        		</p>
+			        	
+			        	
+			        		<!--QUANTIDADE -NUNBER- (PEDIDO) (div/section/article/form/fieldset/label/input)-->
+			        		<P>
+			        			<label for="cQtd">Quantidade: &nbsp</label>
+			        			<input type="number" name="tQtd" id="cQtd" min="0" max="100" value="0"/>	
+			        		</P>
+			        		
+			        		<!--TOTAL -text- (PEDIDO) (div/section/article/form/fieldset/label/input)-->
+			        		<P>
+			        			<label for="cTot">Total R$:&nbsp &nbsp &nbsp &nbsp </label>
+			        			<input type="text" name="tTot" id="cTot" placeholder="Total a pagar " readonly/>
+			        		</P>
+		        	</fieldset>
+		
+					<!--BOTÃO ENVIAR -bt-enviar- (PEDIDO) (div/section/article/form/fieldset/label/input)-->
+					<input id="bt-enviar" type="image" src="_imagens/botao-enviar.png"/> 
+		
+		        </form>
+	        	<!--INÍCIO DO FORMULÁRIO (div/section/article/form)-->
+	        	
+	        	
+			</article> 
+	      	<!--FIM do artigo "noticia-principal" (div/section/article)-->
+	      
+	    </section>
+	    <!--FIM da sessão do corpo da página - "corpo" (div/section)-->
+		
+		
+		<!-- INÍCIO DO RODAPÉ (div/footer)-->
+	    <footer id="rodape">
+		    <p>2015 - by Gustavo Guanabara & Ayrton Monier</p>
+		    <a href="http://fb.com/reinom.notrya" type="_blank"><p>Facebook</p></a>
+		    <a href="http://twitter.com/ayrtonmonier" type="_blank"><p>Twitter</p></a>
+		</footer>
+		<!-- FIM DO RODAPÉ (div/footer)-->
+		
+	<!--FIM DA DIV PRINCIPAL - "interface"-->  	
+	</div>
+
+    <!--referencia para arquivos de dinamização deste documento (Javascript)-->	
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+
+</body>
+</html>

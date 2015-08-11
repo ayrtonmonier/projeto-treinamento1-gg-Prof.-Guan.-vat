@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+<!--INÍCIO do cabeçalho-->
+<head>
+
+	<!--codificação utilizada na página-->
+    <meta charset="UTF-8"/>
+    
+    <!--TITULO da janela/guia do documento-->
+    <title>Tudo Sobre Google Glass</title>
+    
+    <!--REFERÊNCIA da folha de estilo-->
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/media.css"/>
+
+
+</head>
+<!--FIM do cabeçalho-->
+
+
+<!--INÍCIO DO CORPO da página-->
+<body>
+
+	<!--INÍCIO DA DIV PRINCIPAL - "interface"-->
+	<div id="interface">
+	
+		<!--INÍCIO do cabeçalho da página - "cabecalho" (div/header)-->
+	    <header id="cabecalho">
+	
+			<!--grupo de títulos do cabeçalho (div/header/hgroup)-->
+	        <hgroup>
+	            <h1>Google Glass</h1>
+	            <h2>A revolução do Google está chegando</h2>
+	        </hgroup>
+	
+	
+			<!--IMAGEM PRINCIPAL DO CABEÇALHO (div/header/img)-->
+	        <img id="icone" src="_imagens/multimidia.png"/>
+	
+	
+			<!--INÍCIO DO MENU DE NAVEGAÇÃO (div/header/nav)-->
+	        <nav id="menu">
+	
+	
+				<!--TÍTULO DO MENU (semântico) (div/header/nav/h1)-->
+	            <h1>Menu Principal</h1>
+	
+	
+				<!--INICIO da lista não ordenada (div/header/nav/ul)-->
+	            <ul type="square">
+	            
+	            	<!--ITENS da lista não ordenada (div/header/nav/ul/li)-->
+	                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+	                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+	                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+	                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+	                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Faleconosco</a></li>
+	            </ul>
+	            <!--FIM da lista não ordenada-->
+	            
+	        </nav>
+			<!--FIM DO MENU DE NAVEGAÇÃO-->
+			
+			
+	    </header>
+	    <!--FIM do cabeçalho da página - "cabecalho"-->
+	
+		<!--INÍCIO da sessão do corpo da página - "corpo" (div/section)-->
+	    <section id="corpo-full"> 
+	    
+	    
+			<!--INÍCIO do artigo "noticia-principal" (div/section/article)-->    
+			<article id="noticia-principal">
+	
+				<!--INÍCIO do cabeçalho do artigo= "noticia-principal" dentro da sessao="corpo" - "cabecalho-artigo" (div/section/article/header)-->
+		        <header id="cabecalho-artigo">																																																				
+		
+					<!--grupo de títulos do cabeçalho do artigo da sessão (div/section/article/header/hgroup)-->
+		            <hgroup>
+		                <h3>Glass > Multimídia</h3>
+		                <h1>Sons e Vídeos</h1>
+		                <h2>por Gustavo Guanabara & Ayrton Monier</h2>
+		                <h3 class="texto-direita">Atualizado em 02 de Julho de 2015</h3>
+		            </hgroup>
+		            
+		
+		        </header>
+		       <!--FIM do cabeçalho da página - "cabecalho"-->
+	        
+	        
+		        <!--DIV da imagem TV e RADIO da sessao="corpo" - "cabecalho-artigo(div/section/article/div)" -->
+				<div id="tv-radio">
+				
+					<!--AUDIO ELEMENT (div/section/article/div/audio)" -->
+					<audio id="musica" controls="controls">
+						<source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+						Desculpe, seu navegador desatualizado não suporta este formato (mp3) de áudio.
+					</audio>
+					
+					<!--VIDEO ELEMENT (div/section/article/div/audio)" -->
+					<video id="filme" controls="controls" poster="_imagens/videos-mini03.jpg">
+						<source src="_media/getting-started.mp4" type="video/mp4"/>
+						Desculpe, seu navegador desatualizado não suporta este formato (mp4) de vídeo.
+					</video>
+				</div>
+	
+			</article> 
+	      	<!--FIM do artigo "noticia-principal" (div/section/article)-->
+	      
+	    </section>
+	    <!--FIM da sessão do corpo da página - "corpo" (div/section)-->
+
+
+		<!-- INÍCIO DO RODAPÉ (div/footer)-->
+		<footer id="rodape">
+		    <p>2015 - by Gustavo Guanabara & Ayrton Monier</p>
+		    <a href="http://fb.com/reinom.notrya" type="_blank"><p>Facebook</p></a>
+		    <a href="http://twitter.com/ayrtonmonier" type="_blank"><p>Twitter</p></a>
+		</footer>
+		<!-- FIM DO RODAPÉ (div/footer)-->
+	
+	<!--FIM DA DIV PRINCIPAL - "interface"-->  
+	</div>
+
+	<!--REFERENCIA AO JavaScript-->
+	<script language= "javascript" src="_javascript/funcoes.js"> </script>
+
+</body>
+</html>

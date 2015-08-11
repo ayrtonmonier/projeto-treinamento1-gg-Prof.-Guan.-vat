@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+
+<!--INÍCIO do cabeçalho-->
+<head>
+
+	<!--codificação utilizada na página-->
+    <meta charset="UTF-8"/>
+    
+    <!--TITULO da janela/guia do documento-->
+    <title>Tudo Sobre Google Glass</title>
+    
+    <!--REFERÊNCIA da folha de estilo-->
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/fotos.css"/>
+
+
+</head>
+<!--FIM do cabeçalho-->
+
+
+<!--INÍCIO DO CORPO da página-->
+<body>
+
+	<!--INÍCIO DA DIV PRINCIPAL - "interface"-->
+	<div id="interface">
+	
+		<!--INÍCIO do cabeçalho da página - "cabecalho" (div/header)-->
+	    <header id="cabecalho">
+	
+			<!--grupo de títulos do cabeçalho (div/header/hgroup)-->
+	        <hgroup>
+	            <h1>Google Glass</h1>
+	            <h2>A revolução do Google está chegando</h2>
+	        </hgroup>
+	
+			<!--IMAGEM PRINCIPAL DO CABEÇALHO (div/header/img)-->
+	        <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+	
+	
+			<!--INÍCIO DO MENU DE NAVEGAÇÃO (div/header/nav)-->
+	        <nav id="menu">
+	
+				<!--TÍTULO DO MENU (semântico) (div/header/nav/h1)-->
+	            <h1>Menu Principal</h1>
+	
+				
+				<!--INICIO da lista não ordenada (div/header/nav/ul)-->
+	            <ul type="square">
+	            
+	            	<!--ITENS da lista não ordenada (div/header/nav/ul/li)-->
+	                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="index.html">Home</a></li>
+	                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li>
+	                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+	                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+	                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fale-conosco.html">Faleconosco</a></li>
+	            </ul>
+	            <!--FIM da lista não ordenada-->
+	            
+	        </nav>
+	        <!--FIM DO MENU DE NAVEGAÇÃO-->
+	
+	    </header>
+	    <!--FIM do cabeçalho da página - "cabecalho"-->
+	
+		<!--INÍCIO da sessão do corpo da página - "corpo-full" (div/section)-->
+	    <section id="corpo-full"> 
+	    
+	    
+	    	<!--INÍCIO do artigo "noticia-principal" (div/section/article)-->
+			<article id="noticia-principal">
+	
+				<!--INÍCIO do cabeçalho do artigo= "noticia-principal" dentro da sessao="corpo" - "cabecalho-artigo" (div/section/article/header)-->
+		        <header id="cabecalho-artigo">																																																				
+		
+					<!--grupo de títulos do cabeçalho do artigo da sessão (div/section/article/header/hgroup)-->
+		            <hgroup>
+		                <h3>Glass > Fotos</h3>
+		                <h1>Galeria de Imagens do Google Glass</h1>
+		                <h2>por Gustavo Guanabara & Ayrton Monier</h2>
+		                <h3 class="texto-direita">Atualizado em 02 de Julho de 2015</h3>
+		            </hgroup>
+		
+		        </header>
+		        <!--FIM do cabeçalho do artigo= "noticia-principal" dentro da sessao="corpo" - "cabecalho-artigo"-->
+	
+	
+				<!--PARÁGRAFO 1(div/section/article/p)-->
+		        <p>
+		        	Veja na nossa galeria de fotos várias belas imagens que
+		        	mostram algumas das principais características do Google
+		        	Glass, como recursos e propriedades que estão impressionando
+		        	o mundo inteiro. Basta passar o mouse sobre uma das fotos
+		        	para ver uma versão ampliada e com uma breve descrição.
+		        </p>
+	
+	
+				<!--INICIO da lista não ordenada (div/section/article/ul)-->
+		        <ul id="album-fotos">
+		        	<!--ITENS da lista não ordenada (div/section/article/ul/li)-->
+		        	<li id="foto01"><span>Agenda e lembretes</span> </li> 
+		        	<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+		        	<li id="foto03"><span>Leve e compacto</span></li>
+		        	<li id="foto04"><span>Sensação de uma tela de 50"</span></li>
+		        	<li id="foto05"><span>Vários tipos de lente</span></li>
+		        	<li id="foto06"><span>Informações importantes</span></li>
+		        </ul>
+		        
+	      </article> 
+	      <!--FIM do artigo "noticia-principal" (div/section/article)-->
+	      
+	    </section>
+	     <!--FIM da sessão do corpo da página - "corpo" (div/section)-->
+		
+		
+		<!-- INÍCIO DO RODAPÉ (div/footer)-->
+	    <footer id="rodape">
+	        
+		    <p>2015 - by Gustavo Guanabara & Ayrton Monier</p>
+		    <a href="http://fb.com/reinom.notrya" type="_blank"><p>Facebook</p></a>
+		    <a href="http://twitter.com/ayrtonmonier" type="_blank"><p>Twitter</p></a>
+	    
+		</footer>
+		<!-- FIM DO RODAPÉ (div/footer)-->
+		
+	<!--FIM DA DIV PRINCIPAL - "interface"-->  
+	</div>
+
+	<!--referencia para arquivos de dinamização deste documento (Javascript)-->	
+	<script language= "javascript" src="_javascript/funcoes.js"> </script>
+
+</body>
+</html>
